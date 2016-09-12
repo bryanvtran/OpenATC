@@ -1,4 +1,6 @@
 *swp
 *__pycache__
 *pyc
-/userinfo.json
+Scripts/userinfo.json
+/venv/
+.DS_Store
