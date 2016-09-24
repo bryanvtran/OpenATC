@@ -275,7 +275,7 @@ for counter, i in enumerate(link_or_keyword):
         h1 = soup1.find_all('h1')
         for i in h1:
             for link in i.find_all('a', {'class': 'name-link'}, href=True):
-                model = link.string
+                model = link.string.title()
                 in_link = True
                 for keyword in keyword_model[counter]:
                     if keyword not in model:
